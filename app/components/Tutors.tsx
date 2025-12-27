@@ -42,20 +42,20 @@ export default function Tutors() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {tutors.map((tutor, index) => (
             <div
               key={index}
               className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 text-center"
             >
-              <div className="text-6xl mb-4">{tutor.image}</div>
+              <div className="text-6xl mb-4 flex justify-center">{tutor.image}</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-1">{tutor.name}</h3>
-              <p className="text-blue-600 mb-3">{tutor.subject}</p>
+              <p className="text-blue-600 mb-3 font-medium">{tutor.subject}</p>
               <div className="flex items-center justify-center gap-2 mb-2">
                 <span className="text-yellow-400">⭐</span>
                 <span className="font-semibold text-gray-900">{tutor.rating}</span>
               </div>
-              <p className="text-sm text-gray-600">{tutor.students}+ Students</p>
+              <p className="text-sm text-gray-600">{tutor.students.toLocaleString()}+ Students</p>
             </div>
           ))}
         </div>

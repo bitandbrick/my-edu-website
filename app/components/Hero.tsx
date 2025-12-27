@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-block mb-4 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+            <div className="inline-flex mb-6 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
               🎓 Transform Your Learning Journey
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -14,10 +14,10 @@ export default function Hero() {
                 Made Accessible
               </span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl lg:max-w-none">
+            <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
               Join thousands of students learning with expert tutors, interactive courses, and personalized learning paths designed for your success.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <button type="button" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 shadow-lg">
                 Start Learning Today
               </button>
@@ -25,16 +25,16 @@ export default function Hero() {
                 Watch Demo
               </button>
             </div>
-            <div className="mt-12 flex items-center justify-center lg:justify-start gap-8 text-sm text-gray-600">
-              <div>
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 text-sm text-gray-600">
+              <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-gray-900">10K+</div>
                 <div>Active Students</div>
               </div>
-              <div>
+              <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-gray-900">500+</div>
                 <div>Expert Tutors</div>
               </div>
-              <div>
+              <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-gray-900">100+</div>
                 <div>Courses</div>
               </div>
@@ -42,12 +42,12 @@ export default function Hero() {
           </div>
 
           {/* Right Content - Illustration */}
-          <div className="relative">
-            <div className="relative bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 shadow-2xl">
+          <div className="relative order-first lg:order-last">
+            <div className="relative bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-6 sm:p-8 shadow-2xl">
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">📚</span>
                     </div>
                     <div>
@@ -56,7 +56,7 @@ export default function Hero() {
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">👨‍🏫</span>
                     </div>
                     <div>
@@ -65,7 +65,7 @@ export default function Hero() {
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">📊</span>
                     </div>
                     <div>

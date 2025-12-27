@@ -44,13 +44,13 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 bg-gray-50 hover:bg-white"
+              className="p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 bg-gray-50 hover:bg-white text-center sm:text-left"
             >
-              <div className="text-4xl mb-4">{feature.icon}</div>
+              <div className="text-4xl mb-4 flex justify-center sm:justify-start">{feature.icon}</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
             </div>
