@@ -11,7 +11,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+            <a href="#home" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
               EduPlatform
             </a>
           </div>
@@ -33,7 +33,7 @@ export default function Header() {
             <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Contact
             </a>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+            <button type="button" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
               Get Started
             </button>
           </div>
@@ -43,6 +43,8 @@ export default function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -73,7 +75,7 @@ export default function Header() {
             <a href="#contact" className="block text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Contact
             </a>
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+            <button type="button" className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
               Get Started
             </button>
           </div>
