@@ -1,8 +1,8 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Features from './components/Features';
-import Tutors from './components/Tutors';
-import About from './components/About';
+import Products from './components/Products';
+import Solutions from './components/Solutions';
+import CTA from './components/CTA';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -10,9 +10,9 @@ export default function Home() {
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <Features />
-      <Tutors />
-      <About />
+      <Products />
+      <Solutions />
+      <CTA />
       <Footer />
     </div>
   );

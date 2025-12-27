@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Sora, Outfit } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "My Edu Website - Quality Education Platform",
-  description: "Transform your learning experience with our comprehensive education platform. Expert tutors, interactive courses, and personalized learning paths.",
+  title: "Unity Education Platform - Transform Your Institution",
+  description: "Comprehensive education management platform for schools, colleges, universities, and training centers. Manage fees, admissions, learning, HR, and more.",
 };
 
 export default function RootLayout({
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sora.variable} ${outfit.variable} antialiased`}
       >
         {children}
       </body>
